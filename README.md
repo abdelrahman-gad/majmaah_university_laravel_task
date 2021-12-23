@@ -1,3 +1,42 @@
+# Guids for Setting up projects
+
+### 1- Download The repo
+
+### 2- open terminal in the project directory
+### 3- fetch dependencies 
+```
+composer update 
+```
+### 4- create your own .env file 
+```
+cp .env.example .env
+```
+
+### 5- add your own variable values in the .env file including google_client_id and google client secret also callback_url
+
+### 6- generate project key
+```
+php artisan key:generate
+```
+### 7- run migration 
+```
+ php artisan migrate
+```
+### 8- link storage files to the  public directory
+```
+php artisan storage:link
+```
+
+### 9- run the project on the development serve 
+
+```
+php artisan serve
+```
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
