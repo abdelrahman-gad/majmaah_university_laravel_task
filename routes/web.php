@@ -27,3 +27,7 @@ Route::prefix('google')->name('google.')->group(function(){
     Route::get('login',[App\Http\Controllers\SocialAuth\GoogleController::class, 'login'])->name('login');
     Route::any('callback', [App\Http\Controllers\SocialAuth\GoogleController::class, 'callback'])->name('callback');
 });
+
+
+// POSTS ROUTES
+Route::resource('posts', App\Http\Controllers\PostController::class)->middleware('auth:web');
