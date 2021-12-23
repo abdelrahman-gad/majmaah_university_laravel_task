@@ -1,4 +1,6 @@
-# Guids for Setting up projects
+# الاسم :عبدالرحمن عزمي جلال محمد
+# name: abdlerahman azmy galal mohammed
+# Guids for Setting up the project
 
 ### 1- Download The repo
 
