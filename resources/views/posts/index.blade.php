@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-8 offset-1 margin-tb">
         <div class="pull-left">
-            <h2>Laravel 8 Post CRUD Tutorial</h2>
+            <h2>Welcome {{ auth()->user()->name }} </h2>
         </div>
         <div class="pull-right mb-2">
             <a class="btn btn-success" href="{{ route('posts.create') }}"> Create New Post</a>
