@@ -64,7 +64,10 @@
                                 @endif
                             </div>
                         </div>
-                    
+                        <div class="row mt-3">
+                            <div class="col-md-8 offset-4"> <a class="btn btn-lg btn-google btn-block  btn-outline" href="{{ route('google.login') }}"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Login with google account</a> </div>
+                        </div> <br>
+
                     </form>
                 </div>
             </div>

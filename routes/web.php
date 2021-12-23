@@ -20,3 +20,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// GOOGLE ROUTES
+
+Route::prefix('google')->name('google.')->group(function(){
+    Route::get('login',[App\Http\Controllers\SocialAuth\GoogleController::class, 'login'])->name('login');
+    Route::any('callback', [App\Http\Controllers\SocialAuth\GoogleController::class, 'callback'])->name('callback');
+});
